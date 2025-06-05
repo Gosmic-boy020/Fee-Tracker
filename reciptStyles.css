@@ -1,0 +1,212 @@
+ body{
+      background-image: url(bcimage.jpeg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    
+    h1{ 
+     margin-top: 50px;
+      font-family: monospace;
+    }
+    table,th,td{
+      border:solid rgb(36, 36, 36) 2px;
+      color: rgb(255, 235, 11);
+     
+    }
+    .area{
+      margin-top:20px ;
+    }
+
+    button{
+      
+      
+      height: 40px;
+      width: 80px;
+      font-family: sans-serif;
+      border: 1px black solid;
+      background-color: transparent;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.8s;
+    }
+    button:hover{
+      background-color: rgb(40, 2, 40);
+      color: white;
+      border: none;
+      scale: 0.9;
+    }
+
+    button:active{
+      scale: 120;
+    }
+    a{
+      text-decoration: none;
+      color: rgb(255, 195, 237);
+    }
+    .create-area{
+      margin-top: 20px;
+    }
+    input{
+      height: 30px;
+      width: 150px;
+      padding: 15px;
+      background-color: transparent;
+      border: 1px solid black;
+      text-decoration: none;
+      transition: all 0.5s;
+    }
+    input:focus{
+      outline: none;
+      
+    }
+    input::placeholder{
+      color: rgb(46, 46, 46);
+    }
+    .credit-date,.debit-date{
+      color: rgb(0, 0, 0);
+    }
+
+    input:hover{
+      background-color: rgb(2, 32, 40);
+      color: white;
+    }
+    input:hover::placeholder{
+      color: white;
+    }
+    .recipt-area{
+      justify-content: center;
+      align-items: center;
+      width: 48.9%;
+      scale: 0.8;
+    }
+    .pdf-closer{
+
+      float: right;
+      text-align: center;
+      background-color: red;
+      height: 20px;
+      width: 40px;
+      cursor:pointer; 
+      color:rgb(245, 245, 245);
+      margin: 0px 0px 0px 0px;
+      font-weight: bold;
+    }
+    .deactive:active{
+      scale: 0;
+    }
+    /*  */
+    .check{
+      background-color: white;
+      height: 30px;
+      width: 100px;
+      padding: 0;
+    }
+ 
+ /*  */
+    .container{
+  
+      transition: all 1.5s;
+      opacity: 0;
+      transform: translateY(100px);
+      padding: 20px;
+      background-color: white;
+      width:100%;
+      display: inline-block;
+      border: 0px solid black;
+    }
+    .container.show{
+      
+      display: block;
+      transform: translateZ(0);
+      opacity: 1;
+    }
+    .container h3,h1{
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .container h3{
+      margin: 0px 0px;
+      text-align: center;
+    }
+    .container h1{
+      margin-top: 0;
+      text-align: center;
+    }
+    img{
+      float: left;
+      margin: 0% 0px 0px 5%;
+      height: 100px;
+    }
+    .fee-table,.fee-table th,.fee-table tr,.fee-table td{
+      color: black;
+      border: 1px solid black;
+    }
+    .fee-name{  
+      margin:0 10% 0 48% ;  
+    }
+    .fee-name,.fee-name th{
+      color: black;       
+      border: 1px solid black;
+    }
+    .transaction-no,.user-name,.course{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+      font-weight: bold;
+      
+      
+    }
+    .transaction-no,.user-name,.course,.pay-year,.db-date,.roll-num,.fee-table th,td{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 18px;
+      font-weight: bold;
+
+    }
+    .db-date,.roll-num{
+      float: right
+    }
+    .pay-year{
+     margin:0 10% 0 40% ;
+    }
+    .fee-table{
+      width: 100%;
+      margin: 10px 0px 10px 0px;
+    }
+    .print-btn{
+      width: 20%;
+      margin: 0px 0% 10px 43%;
+    }
+    .clg-name{
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      margin: 25px 0px 10px 5%;
+      
+    }
+
+
+    @media (min-width:1900px){
+
+      .container{
+        width: 100%;
+      }
+      .recipt-area{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      scale: 0.8;
+    }
+      
+    }
+    @media (max-width:900px){
+
+      .container{
+        width: 100%;
+      }
+      .recipt-area{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      scale: 0.8;
+    }
+      
+    }
