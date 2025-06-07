@@ -1,0 +1,324 @@
+:root{
+    --primary-color: #211C84;
+    --secondary-color: #4D55CC;
+    --text-color:#000000;
+    --background-color:#7A73D1;
+    --additional-color:#B5A8D5 ;
+    --danger-color:#ff0000;
+    --signal-yellow:#ffdd00b0;
+    --white-milk:#ffffff;
+  }
+  
+  body{
+        background-color: var(--background-color);
+      }
+
+  .brand{ 
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-color);
+    cursor: pointer;
+    background-color: var(--additional-color);
+    border-bottom-left-radius:220px ;
+    border-top-right-radius:220px ;
+    border: 1px solid var(--primary-color);
+  }
+  
+  td{
+    text-align: center;
+    padding: 5px;
+    color:var(--additional-color);
+    background-color: var(--primary-color);
+  }
+  th{
+    
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: var(--additional-color);
+  }
+  .details{
+    background-color: var(--primary-color);
+    color: var(--additional-color);
+  }
+  .del{
+    background-color: var(--background-color);
+  }
+  .del button{
+    background-color: var(--danger-color);
+    color: var(--text-color);
+    float: left;
+    width: 150px;
+  }
+  .amount-total{
+    background-color: var(--signal-yellow);
+    color: var(--text-color);
+    
+  }
+  .area{
+    margin-top:20px ;
+  }
+
+  button{
+    height: 40px;
+    width: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.8s;
+  }
+  button:hover{
+    background-color:var(--primary-color);
+    color: var(--additional-color);
+    scale: 0.9;
+  }
+
+  button:active{
+    scale: 120;
+  }
+  .recipt-tb-data{
+    background-color: var(--background-color);
+  }
+  .recipt-button{
+    border: 2px dotted var(--primary-color);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+  }
+  .SI-NO{
+    background-color: var(--secondary-color);
+    color: var(--additional-color);
+    
+  }
+  .details{
+    background-color: var(--primary-color);
+    color: var(--additional-color);
+  }
+  a{
+    text-decoration: none;
+  }
+  .create-area{
+    margin-top: 20px;
+  }
+  .pmf-create-area{
+    background-color: var(--background-color);
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 30px;
+
+  }
+  .pmf-create-area input{
+    height: 40px;
+    width: 200px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border: 2px dotted var(--white-milk);
+    border-radius: 2px;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  .pmf-create-area input:focus{
+    outline: none;
+  }
+ .pmf-create-area  input::placeholder{
+    color: var(--white-milk);
+  }
+ 
+   .pmf-creat-text{
+    width: 10px;
+    height: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: var(--white-milk);
+  } 
+  .debit-amount,.credit-amount ,.credit-date,.debit-date{
+    margin:20px 0px 10px;
+  }
+  .credit-date,.debit-date{
+    color: var(--white-milk);
+  }
+
+  input:hover{
+    background-color: rgb(2, 32, 40);
+    color: white;
+  }
+  input:hover::placeholder{
+    color: white;
+  }
+  .recipt-area{
+    justify-content: center;
+    align-items: center;
+    width: 48.9%;
+    scale: 0.8;
+  }
+  .pdf-closer{
+
+    float: right;
+    text-align: center;
+    background-color: red;
+    height: 20px;
+    width: 40px;
+    cursor:pointer; 
+    color:rgb(245, 245, 245);
+    margin: 0px 0px 0px 0px;
+    font-weight: bold;
+  }
+  .deactive:active{
+    scale: 0;
+  }
+  /*  */
+  .check{
+    background-color: white;
+    height: 30px;
+    width: 100px;
+    padding: 0;
+  }
+
+/*  */
+  .container{
+
+    transition: all 1.5s;
+    opacity: 0;
+    transform: translateY(100px);
+    padding: 20px;
+    background-color: white;
+    width:100%;
+    display: inline-block;
+    border: 0px solid black;
+  }
+  .container.show{
+    
+    display: block;
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  .container h3,h1{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .container h3{
+    margin: 0px 0px;
+    text-align: center;
+  }
+  .container h1{
+    margin-top: 0;
+    text-align: center;
+  }
+  img{
+    float: left;
+    margin: 0% 0px 0px 5%;
+    height: 100px;
+  }
+  .fee-table,.fee-table th,.fee-table tr,.fee-table td{
+    color: black;
+    border: 1px solid black;
+  }
+  .fee-name{  
+    margin:0 10% 0 48% ;  
+  }
+  .fee-name,.fee-name th{
+    color: black;       
+    border: 1px solid black;
+  }
+  .transaction-no,.user-name,.course{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+  }
+  .transaction-no,.user-name,.course,.pay-year,.db-date,.roll-num,.fee-table th,td{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+  .db-date,.roll-num{
+    float: right
+  }
+  .pay-year{
+    margin:0 10% 0 40% ;
+  }
+  .fee-table{
+    background-color: transparent;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+  .table-styles-deativate{
+    background-color: transparent;
+  }
+  .print-btn{
+    width: 20%;
+    margin: 0px 0% 10px 43%;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+  }
+  .clg-name{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px 10px 5%;
+    
+  }
+  .pmf-user,.pmf-pass{
+    width: 170px;
+    height: 45px;
+    background-color: transparent;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    color:var(--white-milk) ;
+    padding-left: 10px;
+    transition: all 0.5s;
+    font-weight: bold;
+  }
+  .pmf-user:hover,.pmf-pass:hover{
+    background-color: transparent;
+    border: 3px solid var(--signal-yellow);
+  }
+  .pmf-user:focus,.pmf-pass:focus{
+    outline: none;
+  }
+  .pmf-user,.pmf-pass::placeholder{
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  .chk{
+    height:35px ;
+    width: 20px;
+    margin: 0px 0 0 0;
+    padding: 0;
+    align-content: center;
+
+  @media (min-width:1900px){
+
+    .container{
+      width: 100%;
+    }
+    .recipt-area{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    scale: 0.8;
+  }
+    
+  }
+  @media (max-width:900px){
+
+    .container{
+      width: 100%;
+    }
+    .recipt-area{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    scale: 0.8;
+  }
+    
+  }
